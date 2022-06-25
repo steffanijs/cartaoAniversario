@@ -2,7 +2,6 @@ package me.dio.cartaoaniversario
 
 import android.os.Bundle
 import android.util.Log
-import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 
 class RespostaActivity : AppCompatActivity() {
@@ -10,14 +9,6 @@ class RespostaActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_resposta)
         Log.i(TAG, "$ACTIVITY onCreate")
-        acaoBotaoVoltar()
-    }
-
-    private fun acaoBotaoVoltar() {
-        val button = findViewById<Button>(R.id.btnResposta)
-        button.setOnClickListener {
-            finish()
-        }
     }
 
     override fun onResume() {
